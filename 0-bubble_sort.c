@@ -9,11 +9,11 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t i;
-	int sorted = SORTED;
+	int sorted = 0;
 
 	while (!sorted)
 	{
-		sorted = NOT_SORTED;
+		sorted = 1;
 		for (i = 0; i < size - 1; i++)
 		{
 			if (array[i + 1] < array[i])
@@ -21,7 +21,7 @@ void bubble_sort(int *array, size_t size)
 				int tmp = array[i];
 				array[i] = array[i + 1];
 				array[i + 1] = tmp;
-				sorted = SORTED;
+				sorted = 0;
 			}
 		}
 		print_array(array, size);
