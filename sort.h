@@ -2,8 +2,6 @@
 #define SORTING_H_
 
 #include <stdlib.h>
-#define SORTED 0
-#define NOT_SORTED 1
 
 /**
  * struct listint_s - Doubly linked list node
