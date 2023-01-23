@@ -14,15 +14,13 @@ void selection_sort(int *array, size_t size)
 	if (array == NULL || size == 0)
 		return;
 
-	while (i < size - 1)
+	for (; i < size - 1; i++)
 	{
-		j = i + 1;
 		smallest = i;
-		while (j < size)
+		for (j = i + 1; j < size; j++)
 		{
 			if (array[j] < array[smallest])
 				smallest = j;
-			j++;
 		}
 		if (i != smallest)
 		{
@@ -31,6 +29,5 @@ void selection_sort(int *array, size_t size)
 			array[smallest] = tmp;
 			print_array(array, size);
 		}
-		i++;
 	}
 }
