@@ -1,7 +1,6 @@
 #ifndef SORTING_H_
 #define SORTING_H_
 
-#include <stdio.h>
 #include <stdlib.h>
 #define SORTED 0
 #define NOT_SORTED 1
