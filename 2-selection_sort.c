@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * bubble_sort - function thay sorts array using bubble sort Algorithm
+ * selection_sort - function thay sorts array using selection sort Algorithm
  * @array: the array to be sorted
  * @size: number of elements in that array
  */
